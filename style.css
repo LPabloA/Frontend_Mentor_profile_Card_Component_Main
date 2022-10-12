@@ -3,17 +3,16 @@
 /* --------------------Colores -------------- */
 :root {
   /* primarios */
-  --red: hsl(0, 78%, 62%);
-  --Cyan: hsl(180, 62%, 55%);
-  --Orange: hsl(34, 97%, 64%);
-  --Blue: hsl(212, 86%, 64%);
+  --DarkCyan: hsl(185, 75%, 39%);
+  --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --DarkGrayishBlue: hsl(227, 10%, 46%);
   /* neutrales */
-  --dark-blue: hsl(234, 12%, 34%);
-  --grayish-blue: hsl(229, 6%, 66%);
-  --Light-Gray: hsl(0, 0%, 98%);
+  --DarkGray: hsl(0, 0%, 59%);
 }
-
 /*---------------principales---------------------*/
+body {
+  font-size: 18px;
+}
 /*------------------Footer------------------*/
 .attribution {
   font-size: 11px;
