@@ -20,37 +20,37 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 18px;
   /* fondo de la pagina */
-  background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-color: var(--DarkCyan);
+  /* background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
   background-repeat: no-repeat;
-  background-position: top left, bottom right;
+  background-position: top left, bottom right; */
 }
 
 /*---------------Card---------------------*/
 .container {
-  margin: 140px auto 20px auto;
-  width: 328px;
-  height: 376px;
+  border: 1px solid;
+  /* de prueba */
+  margin: 140px auto 20px; /*up sides bottom*/
+  width: 330px;
+  height: 380px;
   border-radius: 10px;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-  background-color: white;
-  border: 1px solid;
+  position: relative; /*esta cosa es magica loco, permite a los objetos ubicarse sin display*/
 }
 .pattern {
   background: url(images/bg-pattern-card.svg);
   height: 140px;
-  grid-column: 1/-1;
-  grid-row: 1/4;
 }
-.container .photo {
-  grid-row: 3/5;
-  grid-column: 3/6;
+.photo {
+  position: absolute;
+  top: 87px;
+  left: 35%;
   border-radius: 50%;
-  border: 3px solid white;
-  justify-self: center;
+  border: 5px solid white;
+  /* justify-self: center; */
   overflow: hidden;
+  height: 96px;
+  width: 96px;
 }
 
 .info {
