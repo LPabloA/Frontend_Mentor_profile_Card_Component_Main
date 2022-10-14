@@ -14,21 +14,22 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 18px;
   /* fondo de la pagina */
   background-color: var(--DarkCyan);
-  /* background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  box-sizing: border-box;
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
   background-repeat: no-repeat;
-  background-position: top left, bottom right; */
+  background-position: bottom 20vh right 51vw, top 50vh left 45vw;
 }
 
 /*---------------Card---------------------*/
 .container {
-  border: 1px solid;
+  /* border: 1px solid; */
   /* de prueba */
   margin: 140px auto 20px; /*up sides bottom*/
   width: 330px;
@@ -52,49 +53,59 @@ body {
   height: 96px;
   width: 96px;
 }
-
+/*--------------Victor...London----------------*/
 .info {
-  grid-column: 2/7;
-  grid-row: 5/6;
-  font-size: 1em;
-  width: 140px;
-  justify-self: center;
+  background-color: white;
+  height: 150px;
+  padding: 75px;
+  box-sizing: border-box;
+  text-align: center;
 }
 .info h1 {
   font-weight: 700;
   font-size: 1em;
-  width: 110px;
+  display: inline;
+  color: var(--VeryDarkDesaturatedBlue);
+  margin-right: 5px;
+}
+.info span {
+  font-weight: 400;
+  color: var(--DarkGrayishBlue);
 }
 .info h2 {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.8em;
-  width: 55px;
+  color: var(--DarkGrayishBlue);
+  margin-top: 8px;
 }
-.line {
-  height: 1px;
-  background: var(--DarkGray);
-  grid-row: 6;
-  grid-column: 1/-1;
-}
+/*------------Followers...Photos---------------*/
 .data {
-  grid-column: 1/-1;
-  grid-row: 6/-1;
+  border-top: 0.1px solid var(--DarkGray);
+  background: white;
+  height: 92px;
   display: flex;
-  justify-self: center;
+  align-items: center;
+  justify-content: space-around;
 }
 .card {
-  width: 65px;
-  margin: 0 20px;
-  /* display: flex;
-  flex-direction: column; */
+  text-align: center;
 }
-.card p {
+.number {
   font-weight: 700;
-  /* font-size: 1em; */
+  color: var(--VeryDarkDesaturatedBlue);
+  margin-bottom: 4px;
 }
-.card span {
-  font-size: 0.6em;
+.units {
   font-weight: 400;
+  font-size: 0.6em;
+  color: var(--DarkGrayishBlue);
+  /* esto es nuevo  */
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 1439px) {
+  .container {
+    width: 350px;
+  }
 }
 /*------------------Footer------------------*/
 .attribution {
